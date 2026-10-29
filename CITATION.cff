@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "TmTcDiff"
+abstract: ""Diff two versions of a telemetry and command dictionary and report which existing procedures and analyses break, ranking SILENT semantic change above loud breakage. The dangerous change is not the removed mnemonic, which fails loudly, but the one whose scale factor, unit, enum mapping or bit offset changed while the name stayed the same, so everything downstream keeps working and quietly means something else. Structural comparison over parsed definitions with explicit change classes - added, removed, renamed, retyped, rescaled, re-enumerated, bit-shifted - plus reference resolution against a corpus of procedures by name and by path, yielding an impact report naming what is broken, what is silently changed and what is unaffected. Rename detection by structural similarity with its FALSE-MATCH RATE MEASURED across a swept similarity threshold and dictionary size, the threshold justified by the measured curve rather than picked. NO LEARNED COMPONENT, DELIBERATELY: this is a structural comparison with a correct answer. Negative control is a pair with no semantic change but substantial textual reordering, verified to produce an empty semantic diff.""
+type: software
+authors:
+  - family-names: "Acharya"
+    given-names: "Om"
+    alias: "OmAcharya-avtr"
+repository-code: "https://github.com/OmAcharya-avtr/tmtcdiff"
+license: "Apache-2.0"
+version: "0.1.0"
+date-released: "2026-08-30"
+keywords:
+  - aerospace
+  - space-operations
